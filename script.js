@@ -6,14 +6,18 @@ menuBtn.onclick = () => {
 };
 
 // Theme toggle (light/dark switch)
-const themeBtn = document.getElementById('theme-toggle');
 themeBtn.addEventListener('click', function() {
-  document.body.classList.toggle('dark-theme');
-  document.body.classList.toggle('light-theme');
-  themeBtn.innerHTML = document.body.classList.contains('dark-theme') ?
-    '<i class="fa fa-sun"></i>' :
-    '<i class="fa fa-moon"></i>';
-  // If you want to support alternate logo svg text
+  if (document.body.classList.contains('dark-theme')) {
+    document.body.classList.remove('dark-theme');
+    document.body.classList.add('light-theme');
+    themeBtn.innerHTML = '<i class="fa fa-moon"></i>';
+  } else {
+    document.body.classList.remove('light-theme');
+    document.body.classList.add('dark-theme');
+    themeBtn.innerHTML = '<i class="fa fa-sun"></i>';
+  }
+
+  // Update SVG logo color
   let lightText = document.querySelector('.logo-text-light');
   let darkText = document.querySelector('.logo-text-dark');
   if (document.body.classList.contains('dark-theme')) {
