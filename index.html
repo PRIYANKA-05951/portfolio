@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>PV Student Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Font & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+</head>
+<body class="light-theme">
+  <!-- Background GIF -->
+  <div class="bg-gif" id="bg-gif"></div>
+  <!-- NavBar -->
+<nav id="navbar">
+  <div class="logo">
+    <svg viewBox="0 0 40 40">
+      <defs>
+        <linearGradient id="lg1" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="10%" stop-color="#F3A2BE"/>
+          <stop offset="40%" stop-color="#50698D"/>
+          <stop offset="100%" stop-color="#81BFB7"/>
+        </linearGradient>
+        <linearGradient id="lg2" x1="0%" y1="100%" x2="100%" y2="0%">
+          <stop offset="0%" stop-color="#8387C3"/>
+          <stop offset="100%" stop-color="#A7AEE9"/>
+        </linearGradient>
+      </defs>
+      <text x="5" y="28" font-size="22" fill="url(#lg1)" font-weight="bold" font-family="Montserrat" class="logo-text-light">PV</text>
+      <text x="5" y="28" font-size="22" fill="url(#lg2)" font-weight="bold" font-family="Montserrat" class="logo-text-dark" style="display:none;">PV</text>
+    </svg>
+  </div>
+  <button class="menu-btn" id="menu-btn"><i class="fa fa-bars"></i></button>
+  <button id="theme-toggle"><i class="fa fa-moon"></i></button>
+  <ul id="nav-list">
+    <li><a href="#home"><i class="fa fa-home"></i> Home</a></li>
+    <li><a href="#about"><i class="fa fa-user"></i> About Me</a></li>
+    <li><a href="#education"><i class="fa fa-graduation-cap"></i> Education</a></li>
+    <li><a href="#skills"><i class="fa fa-code"></i> Skills</a></li>
+    <li><a href="#projects"><i class="fa fa-diagram-project"></i> Projects</a></li>
+    <li><a href="#certificates"><i class="fa fa-award"></i> Certificates</a></li>
+    <li><a href="#contact"><i class="fa fa-envelope"></i> Contact</a></li>
+  </ul>
+</nav>
+  <!-- Sections -->
+  <section id="home" class="glass section">
+    <h1><span id="typewriter"></span></h1>
+    <p class="description">
+      💻 Passion for code, design & innovation <br>
+      🌸 Finding beauty in simplicity <br>
+      🚀 On a journey of constant learning  
+    </p>
+  </section>
+  <div class="section-break"></div>
+ <section id="about" class="glass section about-flex">
+  <div class="profile-pic">
+      <img src="pri.JPG" alt="Profile Picture"/>
+    </div>
+    <div class="about-desc">
+      <h2>About Me</h2>
+      <p>
+        I am Priyanka, a BCA student with a strong interest in design,
+        technology, and problem-solving. 
+        My academic journey has helped me develop a foundation in programming, 
+        data analysis, and web technologies, while also encouraging me to explore 
+        creative approaches in my work. 
+        Through this portfolio, I aim to present my projects, highlight my technical abilities, and 
+        showcase my growth as an aspiring IT professional.
+      </p>
+    </div>
+  </section>
+  <div class="section-break"></div>
+  <section id="education" class="glass section">
+    <h2>Education </h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span>Primary School</span>
+          <span class="timeline-school">Cambridge School</span>
+          <small>2009-2017</small>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span>High School</span>
+          <span class="timeline-school">Narayana e-techno School</span>
+          <small>2018-2020</small>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span>PU</span>
+          <span class="timeline-school">Narayana PU College PU</span>
+          <small>2020-2023</small>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span>Undergraduate</span>
+          <span class="timeline-school">CAIAS</span>
+          <small>2023-2026</small>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="section-break"></div>
+  <section id="skills" class="glass section flex-row">
+    <div class="skills-list">
+      <h2>Skills</h2>
+      <ul>
+        <li class="skill-card">HTML/CSS</li>
+        <li class="skill-card">UI/UX</li>
+        <li class="skill-card">PYTHON</li>
+        <li class="skill-card">DBMS</li>
+        <li class="skill-card">DATA VISUALISATION</li>
+      </ul>
+    </div>
+    <div class="hobbies-list">
+      <h2>Hobbies</h2>
+      <ul>
+        <li class="hobby-card">CHESS</li>
+        <li class="hobby-card">PHOTOGRAPHY</li>
+        <li class="hobby-card">EDITING</li>
+        <li class="hobby-card">LISTENING TO MUSIC</li>
+        <li class="hobby-card">WATCHING K SHOWS</li>
+      </ul>
+    </div>
+  </section>
+  <div class="section-break"></div>
+  <section id="projects" class="glass section">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <img src="https://i.pinimg.com/736x/96/d9/e8/96d9e847ec054e96a7fe7787c62b9d4a.jpg" alt="Student Portal">
+        <h3>Student Portal</h3>
+        <p>Web platform for student information.</p>
+      </div>
+      <div class="project-card">
+        <img src="https://i.pinimg.com/736x/09/ab/cc/09abcca0eea3e28c1911e04aa9bb4632.jpg" alt="E-Commerce App">
+        <h3>E-Commerce App</h3>
+        <p>Full-stack shopping experience.</p>
+      </div>
+      <div class="project-card">
+        <img src="https://i.pinimg.com/1200x/ce/a5/e4/cea5e48c88cba27483e015b3740f188c.jpg" alt="Chatbot">
+        <h3>Chatbot</h3>
+        <p>Automated Q&amp;A system.</p>
+      </div>
+      <div class="project-card">
+        <img src="https://i.pinimg.com/736x/d3/9e/a1/d39ea189c13a123d979122213acf0f15.jpg" alt="Personal Blog">
+        <h3>Personal Blog</h3>
+        <p>Platform for sharing posts and ideas.</p>
+      </div>
+    </div>
+  </section>
+  <div class="section-break"></div>
+  <section id="certificates" class="glass section">
+    <h2>Certificates</h2>
+    <div class="certificates-grid">
+      <div class="certificate-card">
+        <img class="certificate-img" src="1.JPG" alt="Data Analytics Simulation">
+        Data Analytics Simulation
+      </div>
+      <div class="certificate-card">
+        <img class="certificate-img" src="2.JPG" alt="Data Visualisation Simulation">
+        Data Visualisation Simulation
+      </div>
+      <div class="certificate-card">
+        <img class="certificate-img" src="3.JPG" alt="Data analytics and visualisation Simulation">
+         Data analytics and visualisation
+      </div>
+      <div class="certificate-card">
+        <img class="certificate-img" src="4.JPG" alt="Power BI">
+      Power BI
+      </div>
+    </div>
+  </section>
+  <div class="section-break"></div>
+  <section id="contact" class="glass section">
+    <h2>Contact Me</h2>
+    <form id="contact-form" autocomplete="off">
+      <input type="text" placeholder="Name" required/>
+      <input type="email" placeholder="Email" required/>
+      <input type="tel" placeholder="Phone" required/>
+      <textarea rows="3" placeholder="Message"></textarea>
+      <button type="submit" class="gradient-btn">Send Message</button>
+    </form>
+    <div class="contact-links">
+      <a class="icon-link" href="mailto:priyanka.venkatesh9486@gmail.com" title="Email" target="_blank"><i class="fa fa-envelope"></i></a>
+      <a class="icon-link" href="https://www.linkedin.com/in/priyanka-venkatesh-752b41360/" title="LinkedIn" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a class="icon-link" href="https://github.com/" title="GitHub" target="_blank"><i class="fab fa-github"></i></a>
+      <a class="icon-link" href="tel:+918867642504" title="Phone"><i class="fa fa-phone"></i></a>
+    </div>
+    <div id="demo-message"></div>
+  </section>
+  <footer class="footer glass">
+    <span>
+      Made by PV | <span style="color:#9BA6CA">STUDENT</span>
+    </span>
+    <div class="footer-links">
+      <a href="mailto:priyanka.venkatesh9486@gmail.com" title="Email" target="_blank"><i class="fa fa-envelope"></i></a>
+      <a href="https://www.linkedin.com/in/priyanka-venkatesh-752b41360/" title="LinkedIn" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/" title="GitHub" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="tel:+918867642504" title="Phone"><i class="fa fa-phone"></i></a>
+    </div>
+    <span style="color:#BBB; font-size:0.97rem;">&copy; 2025 Priyanka Venkatesh. All Rights Reserved.</span>
+  </footer>
+
+  <!-- Modal for image zoom -->
+  <div class="modal" id="img-modal">
+    <div class="modal-content">
+      <span class="close" id="modal-close">&times;</span>
+      <img src="" alt="Zoomed Image" id="modal-image">
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
