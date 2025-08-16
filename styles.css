@@ -18,8 +18,11 @@
   position: fixed;
   top:0; left:0; width:100vw; height:100vh;
   z-index: -1;
-  background: url('light.GIF') center/cover no-repeat;
+  background: url('light.gif') center/cover no-repeat; /* fixed lowercase */
   transition: background 0.7s;
+}
+body.dark-theme .bg-gif {
+  background:url('dark.gif') center/cover no-repeat;
 }
 /* Navbar & Logo */
 nav#navbar {

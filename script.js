@@ -5,27 +5,30 @@ menuBtn.onclick = () => {
   navList.classList.toggle('active');
 };
 
-// Theme toggle (light/dark switch)
-themeBtn.addEventListener('click', function() {
-  if (document.body.classList.contains('dark-theme')) {
-    document.body.classList.remove('dark-theme');
-    document.body.classList.add('light-theme');
-    themeBtn.innerHTML = '<i class="fa fa-moon"></i>';
-  } else {
-    document.body.classList.remove('light-theme');
-    document.body.classList.add('dark-theme');
-    themeBtn.innerHTML = '<i class="fa fa-sun"></i>';
-  }
+// Theme toggle (light/dark)
+const themeBtn = document.getElementById('theme-toggle');
+const bgGif = document.getElementById('bg-gif');
 
-  // Update SVG logo color
+themeBtn.addEventListener('click', function() {
+  document.body.classList.toggle('dark-theme');
+  document.body.classList.toggle('light-theme');
+
+  themeBtn.innerHTML = document.body.classList.contains('dark-theme')
+    ? '<i class="fa fa-sun"></i>'
+    : '<i class="fa fa-moon"></i>';
+
+  bgGif.style.background = document.body.classList.contains('dark-theme')
+    ? "url('dark.gif') center/cover no-repeat"
+    : "url('light.gif') center/cover no-repeat";
+
   let lightText = document.querySelector('.logo-text-light');
   let darkText = document.querySelector('.logo-text-dark');
   if (document.body.classList.contains('dark-theme')) {
-    if (lightText) lightText.style.display = 'none';
-    if (darkText) darkText.style.display = '';
+    lightText.style.display = 'none';
+    darkText.style.display = '';
   } else {
-    if (lightText) lightText.style.display = '';
-    if (darkText) darkText.style.display = 'none';
+    lightText.style.display = '';
+    darkText.style.display = 'none';
   }
 });
 
